@@ -1,0 +1,63 @@
+# Environment & Credentials
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+*.p12
+credentials.json
+secrets.yaml
+secrets.json
+
+# Tokens
+GITHUB_TOKEN
+ghp_*
+gho_*
+ghu_*
+ghs_*
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+*.egg
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Logs & Temp
+*.log
+logs/
+tmp/
+temp/
+*.tmp
+*.bak
+
+# Build artifacts
+*.exe
+*.dll
+*.so
+*.dylib
+
+# QClaw local
+.qclaw-config.local
+.qclaw-cache/
