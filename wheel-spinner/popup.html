@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=400">
+  <title>转盘抽奖器</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🎡 转盘抽奖</h1>
+
+    <div class="wheel-wrapper">
+      <canvas id="wheelCanvas" width="340" height="340"></canvas>
+      <div class="pointer">▼</div>
+    </div>
+
+    <div class="controls">
+      <button id="spinBtn" class="btn-spin">开始抽奖</button>
+      <button id="editBtn" class="btn-edit">编辑奖品</button>
+    </div>
+
+    <div id="resultBox" class="result-box hidden">
+      <p class="result-label">恭喜获得</p>
+      <p id="resultPrize" class="result-prize"></p>
+      <button id="closeResult" class="btn-close">再来一次</button>
+    </div>
+  </div>
+
+  <div id="editorPanel" class="editor-panel hidden">
+    <h2>编辑奖品</h2>
+    <div id="prizeList" class="prize-list"></div>
+    <div class="editor-actions">
+      <button id="addPrizeBtn" class="btn-add">+ 添加奖品</button>
+      <button id="saveBtn" class="btn-save">保存</button>
+      <button id="cancelBtn" class="btn-cancel">取消</button>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
